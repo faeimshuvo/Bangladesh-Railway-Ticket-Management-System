@@ -10,7 +10,7 @@ void login(void)
 
 
 
-        fscanf(log,"%s%s", userfile,passwordfile);//storing the username and password from file
+        fscanf(log,"%s%s", userfile,passwordfile);
 
         while(1)
         {
@@ -24,7 +24,7 @@ void login(void)
           printf("Enter user name\n");
           fflush(stdin);
           fgets(username,sizeof(username),stdin);
-        username[strlen(username)-1]='\0'; //remove the new line charecter
+        username[strlen(username)-1]='\0'; 
 
 
         printf("Enter password\n");
@@ -33,7 +33,7 @@ void login(void)
         password[strlen(password)-1]='\0';
 
 
-       //matching password and username
+       
         if(strcmp(username, "Fahim") == 0 && strcmp(password, "password") == 0)
 
          {
