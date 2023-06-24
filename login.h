@@ -9,7 +9,6 @@ void login(void)
     log=fopen("login.txt","r");
 
 
-
         fscanf(log,"%s%s", userfile,passwordfile);
 
         while(1)
