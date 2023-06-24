@@ -10,7 +10,7 @@ void viewTicket(int ticketNumber);
 void cancelTicket(int ticketNumber);
 void printAllTickets();
 
-//splash.c:
+
 void showSplashScreen() {
 
 printf("                              .  .:=+=:           \n");
@@ -33,7 +33,7 @@ printf("                                  +.::..:====..   \n");
 
 }
 
-//login.c:
+
 void login(void)
 {
 
@@ -67,7 +67,7 @@ void login(void)
         password[strlen(password)-1]='\0';
 
 
-       //matching password and username
+       
         if(strcmp(username, "Fahim") == 0 && strcmp(password, "password") == 0)
 
          {
@@ -91,7 +91,7 @@ void login(void)
 
     }
 
-//menu.c:
+
 int main(void)
 {
     int choice;
@@ -141,7 +141,7 @@ int main(void)
 
     return 0;
 }
-//database.h:
+
 struct Ticket {
     int ticketNumber;
     char passengerName[50];
@@ -154,7 +154,7 @@ struct Ticket {
 struct Ticket tickets[MAX_TICKETS];
 int numTickets = 0;
 
-//database.c:
+
 void addTicket() {
     if (numTickets >= MAX_TICKETS) {
         printf("Ticket limit reached!\n");
